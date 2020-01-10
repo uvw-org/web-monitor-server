@@ -6,6 +6,7 @@ module.exports = {
     await queryInterface.createTable('custom_events', {
       id: { type: INTEGER, primaryKey: true, autoIncrement: true },
       type: STRING(30),
+      custom: STRING(30),
       project_id: INTEGER,
       created_at: DATE,
       updated_at: DATE,
